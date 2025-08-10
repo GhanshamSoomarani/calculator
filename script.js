@@ -76,7 +76,6 @@ function calculate() {
 }
 
 function replaceFactorials(expr) {
-    // Replace factorial like 5! with the actual factorial value
     return expr.replace(/(\d+)!/g, (_, n) => factorial(parseInt(n)));
 }
 
@@ -90,7 +89,6 @@ function factorial(n) {
     return result;
 }
 
-// Initially disable all buttons except ON/OFF
 document.querySelectorAll('.buttons button').forEach(btn => { 
     if (btn.id !== 'onoff') btn.disabled = true; 
 });
